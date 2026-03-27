@@ -1,0 +1,13 @@
+{
+  "itemGroup.createeasiersheets": "Example Mod Tab",
+  "block.createeasiersheets.example_block": "Example Block",
+  "item.createeasiersheets.example_item": "Example Item",
+
+  "createeasiersheets.configuration.title": "Create: Easier Sheets Configs",
+  "createeasiersheets.configuration.section.createeasiersheets.common.toml": "Create: Easier Sheets Configs",
+  "createeasiersheets.configuration.section.createeasiersheets.common.toml.title": "Create: Easier Sheets Configs",
+  "createeasiersheets.configuration.items": "Item List",
+  "createeasiersheets.configuration.logDirtBlock": "Log Dirt Block",
+  "createeasiersheets.configuration.magicNumberIntroduction": "Magic Number Text",
+  "createeasiersheets.configuration.magicNumber": "Magic Number"
+}
