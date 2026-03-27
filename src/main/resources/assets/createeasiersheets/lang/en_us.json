@@ -1,7 +1,7 @@
 {
-  "itemGroup.createeasiersheets": "Example Mod Tab",
-  "block.createeasiersheets.example_block": "Example Block",
-  "item.createeasiersheets.example_item": "Example Item",
+  "creativetab.createeasiersheets": "Create: Easier Sheets",
+  "item.createeasiersheets.sturdy_hammer": "Sturdy Hammer",
+  "tooltip.createeasiersheets.sturdy_hammer.usage": "Sneak + Right Click on a Depot to press ingots.",
 
   "createeasiersheets.configuration.title": "Create: Easier Sheets Configs",
   "createeasiersheets.configuration.section.createeasiersheets.common.toml": "Create: Easier Sheets Configs",

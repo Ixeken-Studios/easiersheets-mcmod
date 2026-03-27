@@ -1,5 +1,7 @@
 package com.ixeken.easiersheets;
 
+import com.ixeken.easiersheets.item.ModItems;
+import com.ixeken.easiersheets.tab.ModCreativeTabs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -86,6 +88,10 @@ public class CreateEasierSheets {
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
+        // Llama a nuestro catálogo y pásale el bus de eventos del mod
+        ModItems.register(modEventBus);
+        ModCreativeTabs.register(modEventBus);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
