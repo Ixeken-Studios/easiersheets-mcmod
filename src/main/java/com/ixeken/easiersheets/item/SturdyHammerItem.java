@@ -38,7 +38,7 @@ public class SturdyHammerItem extends Item {
                 .withStyle(ChatFormatting.GRAY));
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
-    
+
     @Override
     public InteractionResult useOn(UseOnContext context) {
         Level level = context.getLevel();
