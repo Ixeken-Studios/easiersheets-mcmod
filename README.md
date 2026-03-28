@@ -1,25 +1,25 @@
+# Create: Easier Sheets 🔨
 
-Installation information
-=======
+Un addon ligero y práctico para el mod **Create** en **NeoForge 1.21.1**. Este mod introduce el *Sturdy Hammer* (Martillo Robusto), una herramienta inmersiva que permite a los jugadores prensar metales de forma manual en las etapas tempranas del juego, sin necesidad de energía cinética.
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+## ✨ Características Principales
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+* **Prensado Manual:** Agáchate (Sneak) y haz clic derecho con el martillo sobre un *Depot* que contenga un lingote para convertirlo instantáneamente en su respectiva placa (Sheet).
+* **Compatibilidad Dinámica Universal:** El código lee automáticamente las recetas nativas de la *Mechanical Press*. Funciona de forma inmediata con Hierro, Oro, Cobre, Latón (Brass) y **cualquier otro lingote modded** que tenga una receta de prensado válida.
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+## 🛠️ Crafteo
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+El *Sturdy Hammer* se forja en una mesa de crafteo estándar utilizando materiales base de Create, lo que lo balancea perfectamente dentro de la progresión del juego:
+
+* **Fila Superior:** 3x Sturdy Sheets
+* **Centro Vertical:** 2x Palos de Madera (Sticks)
+
+## 📦 Dependencias e Instalación
+
+Para jugar con este mod, necesitas el siguiente entorno:
+* **Minecraft:** 1.21.1
+* **Modloader:** NeoForge
+* **Dependencia Obligatoria:** [Create Mod](https://modrinth.com/mod/create) (Versión compatible con 1.21.1)
+
+**Instalación:** Simplemente deja caer el archivo `.jar` compilado en tu carpeta `/.minecraft/mods/` junto con el mod Create.
