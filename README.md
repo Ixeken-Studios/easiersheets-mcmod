@@ -12,8 +12,9 @@ Un addon ligero y práctico para el mod **Create** en **NeoForge 1.21.1**. Este 
 
 El *Sturdy Hammer* se forja en una mesa de crafteo estándar utilizando materiales base de Create, lo que lo balancea perfectamente dentro de la progresión del juego:
 
-* **Fila Superior:** 3x Sturdy Sheets
+* **Fila Superior:** 2x Sturdy Sheets 1x Bloque de Hierro
 * **Centro Vertical:** 2x Palos de Madera (Sticks)
+![img.png](img.png)
 
 ## 📦 Dependencias e Instalación
 
