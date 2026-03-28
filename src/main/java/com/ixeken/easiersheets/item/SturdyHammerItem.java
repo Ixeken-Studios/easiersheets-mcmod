@@ -76,6 +76,12 @@ public class SturdyHammerItem extends Item {
                                     Block.popResource(level, pos.above(), resultStack);
                                 }
 
+                                // --- FIX DE DESYNC ---
+                                // Le decimos al servidor que guarde el bloque y obligue al cliente a redibujarlo
+                                depot.setChanged();
+                                level.sendBlockUpdated(pos, level.getBlockState(pos), level.getBlockState(pos), 3);
+                                // ---------------------
+
                                 // Desgastamos el martillo
                                 if (context.getPlayer() != null) {
                                     context.getItemInHand().hurtAndBreak(1, context.getPlayer(), EquipmentSlot.MAINHAND);
