@@ -1,6 +1,6 @@
 # Create: Easier Sheets 🔨
 
-Un addon ligero y práctico para el mod **Create** en **NeoForge 1.21.1**. Este mod introduce el *Sturdy Hammer* (Martillo Robusto), una herramienta inmersiva que permite a los jugadores prensar metales de forma manual en las etapas tempranas del juego, sin necesidad de energía cinética.
+Un addon ligero y práctico para el mod **Create** en **NeoForge 1.21.1**. Este mod introduce el *Sturdy Hammer* (Martillo Robusto), una herramienta inmersiva que permite a los jugadores prensar metales de forma manual en las etapas tempranas del juego, sin necesidad de energía cinética, compensandolo con la receta de crafteo algo costosa.
 
 ## ✨ Características Principales
 
@@ -12,9 +12,9 @@ Un addon ligero y práctico para el mod **Create** en **NeoForge 1.21.1**. Este 
 
 El *Sturdy Hammer* se forja en una mesa de crafteo estándar utilizando materiales base de Create, lo que lo balancea perfectamente dentro de la progresión del juego:
 
-* **Fila Superior:** 2x Sturdy Sheets 1x Bloque de Hierro
-* **Centro Vertical:** 2x Palos de Madera (Sticks)
-![img.png](img.png)
+* **Fila Superior:** 2x Anvil 1x Block of Iron
+* **Centro Vertical:** 2x Lightning Rod
+![img_1.png](img_1.png)!
 
 ## 📦 Dependencias e Instalación
 
