@@ -1,13 +1,6 @@
 {
-  "creativetab.createeasiersheets": "Create: Easier Sheets",
   "item.createeasiersheets.sturdy_hammer": "Sturdy Hammer",
+  "creativetab.createeasiersheets": "Create: Easier Sheets",
   "tooltip.createeasiersheets.sturdy_hammer.usage": "Sneak + Right Click on a Depot to press ingots.",
-
-  "createeasiersheets.configuration.title": "Create: Easier Sheets Configs",
-  "createeasiersheets.configuration.section.createeasiersheets.common.toml": "Create: Easier Sheets Configs",
-  "createeasiersheets.configuration.section.createeasiersheets.common.toml.title": "Create: Easier Sheets Configs",
-  "createeasiersheets.configuration.items": "Item List",
-  "createeasiersheets.configuration.logDirtBlock": "Log Dirt Block",
-  "createeasiersheets.configuration.magicNumberIntroduction": "Magic Number Text",
-  "createeasiersheets.configuration.magicNumber": "Magic Number"
+  "category.createeasiersheets.hammering": "Hammering"
 }

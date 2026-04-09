@@ -1,5 +1,6 @@
 package com.ixeken.easiersheets.tab;
 
+import com.ixeken.easiersheets.CreateEasierSheets;
 import com.ixeken.easiersheets.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -13,7 +14,7 @@ import java.util.function.Supplier;
 public class ModCreativeTabs {
     // Creamos el registro para las pestañas creativas
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
-            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, "createeasiersheets");
+            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CreateEasierSheets.MODID);
 
     // Construimos nuestra pestaña
     public static final Supplier<CreativeModeTab> EASIER_SHEETS_TAB = CREATIVE_MODE_TABS.register("easier_sheets_tab",

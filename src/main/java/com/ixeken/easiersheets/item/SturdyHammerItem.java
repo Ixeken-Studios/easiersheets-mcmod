@@ -89,9 +89,10 @@ public class SturdyHammerItem extends Item {
 
                                 // Feedback audiovisual
                                 level.playSound(null, pos, SoundEvents.ANVIL_USE, SoundSource.BLOCKS, 0.8F, 1.2F);
-                                ((ServerLevel) level).sendParticles(ParticleTypes.CRIT,
-                                        pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5,
-                                        15, 0.2, 0.1, 0.2, 0.1);
+                                // Efecto visual de partículas de llama para mayor inmersión
+                                ((ServerLevel) level).sendParticles(ParticleTypes.FLAME, 
+                                    pos.getX() + 0.5, pos.getY() + 1.1, pos.getZ() + 0.5, 
+                                    10, 0.2, 0.2, 0.2, 0.05);
                             }
                             return InteractionResult.sidedSuccess(level.isClientSide());
                         }

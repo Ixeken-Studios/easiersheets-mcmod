@@ -15,7 +15,7 @@ loaderVersion="${loader_version_range}" #mandatory
 license="${mod_license}"
 
 # A URL to refer people to when problems occur with this mod
-#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
+issueTrackerURL="https://modrinth.com/mod/create-easier-sheets/issues" #optional
 
 # A list of mods - how many allowed here is determined by the individual mod loader
 [[mods]] #mandatory
@@ -33,20 +33,21 @@ displayName="${mod_name}" #mandatory
 #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
 
 # A URL for the "homepage" for this mod, displayed in the mod UI
-#displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
+displayURL="https://modrinth.com/mod/create-easier-sheets" #optional
 
 # A file name (in the root of the mod JAR) containing a logo for display
-#logoFile="examplemod.png" #optional
+logoFile="modimage.jpeg" #optional
 
 # A text field displayed in the mod UI
 #credits="" #optional
 
 # The authors of the mod, displayed in the mod UI (optional)
-authors="Ikexen Studios"
+authors="Joii-exe"
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-An easier way to sheets from the create mod
+A lightweight and practical addon for the Create mod that introduces the Sturdy Hammer.
+Allows manual pressing of ingots into sheets in early game stages without kinetic energy.
 '''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
@@ -79,14 +80,23 @@ An easier way to sheets from the create mod
     # Side this dependency is applied on - BOTH, CLIENT, or SERVER
     side="BOTH"
 
-# Here's another dependency
+# Dependency on Minecraft
 [[dependencies.${mod_id}]]
     modId="minecraft"
     type="required"
-    # This version range declares a minimum of the current minecraft version up to but not including the next major version
     versionRange="${minecraft_version_range}"
     ordering="NONE"
     side="BOTH"
+
+# Dependency on Create
+[[dependencies.${mod_id}]]
+    modId="create"
+    type="required"
+    # We use a broad range to ensure compatibility with most 1.21.1 versions of Create
+    versionRange="[0.6.0,)"
+    ordering="AFTER"
+    side="BOTH"
+
 
 # Features are specific properties of the game environment, that you may want to declare you require. This example declares
 # that your mod requires GL version 3.2 or higher. Other features will be added. They are side aware so declaring this won't
