@@ -2,6 +2,8 @@
 
 [**Download on Modrinth**](https://modrinth.com/mod/create-easier-sheets)
 
+[Leer en Español](description_es.md)
+
 ### Skip the early-game kinetic setup for getting sheets and have them right away.
 
 ## ✨ How it works

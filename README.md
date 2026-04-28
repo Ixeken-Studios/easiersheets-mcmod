@@ -2,6 +2,8 @@
 
 A lightweight NeoForge addon for the **Create** mod.
 
+[Leer en Español](README_es.md)
+
 [**Download on Modrinth**](https://modrinth.com/mod/create-easier-sheets)
 
 For the full mod description and features, see [description.md](description.md).
