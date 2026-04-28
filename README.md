@@ -1,26 +1,29 @@
 # Create: Easier Sheets 🔨
 
-Un addon ligero y práctico para el mod **Create** en **NeoForge 1.21.1**. Este mod introduce el *Sturdy Hammer* (Martillo Robusto), una herramienta inmersiva que permite a los jugadores prensar metales de forma manual en las etapas tempranas del juego, sin necesidad de energía cinética, compensandolo con la receta de crafteo algo costosa.
+A lightweight NeoForge addon for the **Create** mod.
 
-## ✨ Características Principales
+[**Download on Modrinth**](https://modrinth.com/mod/create-easier-sheets)
 
-* **Prensado Manual:** Agáchate (Sneak) y haz clic derecho con el martillo sobre un *Depot* que contenga un lingote para convertirlo instantáneamente en su respectiva placa (Sheet).
-* **Compatibilidad Dinámica Universal:** El código lee automáticamente las recetas nativas de la *Mechanical Press*. Funciona de forma inmediata con Hierro, Oro, Cobre, Latón (Brass) y **cualquier otro lingote modded** que tenga una receta de prensado válida.
+For the full mod description and features, see [description.md](description.md).
 
+## 📖 Overview
+Introduces the **Sturdy Hammer**, a tool that lets you manually press any valid ingot into a sheet on a Depot without needing kinetic energy.
 
-## 🛠️ Crafteo
+## 🚀 How to Run the Project
 
-El *Sturdy Hammer* se forja en una mesa de crafteo estándar utilizando materiales base de Create, lo que lo balancea perfectamente dentro de la progresión del juego:
+This project uses Gradle. You can run the following commands in the root directory:
 
-* **Fila Superior:** 2x Anvil 1x Block of Iron
-* **Centro Vertical:** 2x Lightning Rod
-![img_1.png](img_1.png)!
+- **Run Client:** `./gradlew runClient`
+- **Run Server:** `./gradlew runServer`
+- **Build Mod:** `./gradlew build`
 
-## 📦 Dependencias e Instalación
+## 📂 Project Structure
+- `src/main/java/` - Core logic, items, and integrations.
+- `src/main/resources/` - Textures, models, recipes, and language files.
+- `common/` - Documentation assets.
 
-Para jugar con este mod, necesitas el siguiente entorno:
-* **Minecraft:** 1.21.1
-* **Modloader:** NeoForge
-* **Dependencia Obligatoria:** [Create Mod](https://modrinth.com/mod/create) (Versión compatible con 1.21.1)
+## 🤝 Contributing & Support
 
-**Instalación:** Simplemente deja caer el archivo `.jar` compilado en tu carpeta `/.minecraft/mods/` junto con el mod Create.
+- 🐛 **Bug Reports:** Found a bug? Let us know by opening an issue in our [Issue Tracker](https://github.com/Ixeken-Studios/easiersheets-mcmod/issues).
+- 💡 **Feature Requests:** Have a great idea? Suggest it in our [Feature Requests](https://github.com/Ixeken-Studios/easiersheets-mcmod/issues).
+- 💬 **Discussions:** Want to ask questions or share your thoughts? Join the [GitHub Discussions](https://github.com/Ixeken-Studios/easiersheets-mcmod/discussions).

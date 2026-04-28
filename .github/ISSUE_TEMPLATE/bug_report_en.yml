@@ -1,0 +1,67 @@
+name: "Bug Report (English)"
+description: Create a report to help us improve
+title: '[BUG]: '
+labels: ['bug', 'triage']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: To Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: A clear and concise description of what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots/GIFs
+      description: If applicable, add screenshots or GIFs to help explain your problem.
+  - type: dropdown
+    id: mc_version
+    attributes:
+      label: Minecraft Version
+      options:
+        - '1.21.1'
+        - 'Other (please specify in context)'
+    validations:
+      required: true
+  - type: input
+    id: neoforge_version
+    attributes:
+      label: NeoForge Version
+      placeholder: e.g. 21.1.222
+    validations:
+      required: true
+  - type: input
+    id: mod_version
+    attributes:
+      label: Mod Version
+      placeholder: e.g. 1.1.0
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add any other context about the problem here (e.g. crash reports, logs).

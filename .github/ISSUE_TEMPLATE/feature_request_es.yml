@@ -1,0 +1,30 @@
+name: "Sugerencia de Características (Español)"
+description: Sugiere una idea para este mod
+title: '[SUGERENCIA]: '
+labels: ['enhancement', 'future']
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: ¿Tu sugerencia está relacionada con un problema?
+      description: Una descripción clara y concisa de cuál es el problema.
+      placeholder: Siempre me frustra cuando [...]
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe la solución que te gustaría
+      description: Una descripción clara y concisa de lo que quieres que suceda.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Describe las alternativas que has considerado
+      description: Una descripción clara y concisa de cualquier solución o característica alternativa que hayas considerado.
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto adicional
+      description: Agrega cualquier otro contexto o capturas de pantalla sobre la sugerencia aquí.

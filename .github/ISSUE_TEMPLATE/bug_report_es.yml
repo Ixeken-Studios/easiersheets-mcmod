@@ -1,0 +1,67 @@
+name: "Reporte de Error (Español)"
+description: Crea un reporte para ayudarnos a mejorar
+title: '[ERROR]: '
+labels: ['bug', 'triage']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ¡Gracias por tomarte el tiempo de reportar este error!
+  - type: textarea
+    id: description
+    attributes:
+      label: Descripción del error
+      description: Una descripción clara y concisa de cuál es el error.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Pasos para reproducir
+      description: Pasos para reproducir el comportamiento.
+      placeholder: |
+        1. Ir a '...'
+        2. Hacer clic en '...'
+        3. Ver el error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamiento esperado
+      description: Una descripción clara y concisa de lo que esperabas que sucediera.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Capturas de pantalla/GIFs
+      description: Si aplica, agrega capturas de pantalla o GIFs para ayudar a explicar tu problema.
+  - type: dropdown
+    id: mc_version
+    attributes:
+      label: Versión de Minecraft
+      options:
+        - '1.21.1'
+        - 'Otra (especificar en contexto adicional)'
+    validations:
+      required: true
+  - type: input
+    id: neoforge_version
+    attributes:
+      label: Versión de NeoForge
+      placeholder: ej. 21.1.222
+    validations:
+      required: true
+  - type: input
+    id: mod_version
+    attributes:
+      label: Versión del Mod
+      placeholder: ej. 1.1.0
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto adicional
+      description: Agrega cualquier otro contexto sobre el problema aquí (ej. crash reports, logs).
