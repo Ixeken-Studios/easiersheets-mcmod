@@ -6,8 +6,6 @@
   "tooltip.createeasiersheets.obsidian_mallet.usage": "Sneak + Right Click on a Depot to press ingots (Careful, it's brittle!).",
   "category.createeasiersheets.hammering": "Hammering",
   "config.createeasiersheets.client": "Client Settings",
-  "config.createeasiersheets.enableSound": "Enable Hammer Sound",
-  "config.createeasiersheets.enableSound.tooltip": "Whether the Sturdy Hammer should play a sound when used on a Depot.",
   "config.createeasiersheets.soundVolume": "Hammer Sound Volume",
   "config.createeasiersheets.soundVolume.tooltip": "Volume of the sound emitted when using the Sturdy Hammer on a Depot.",
   "config.createeasiersheets.enableParticles": "Enable Hammer Particles",

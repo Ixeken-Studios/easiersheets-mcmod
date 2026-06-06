@@ -5,8 +5,6 @@
   "tooltip.createeasiersheets.sturdy_hammer.usage": "Agachar + Clique Direito em um Depósito para prensar lingotes.",
   "tooltip.createeasiersheets.obsidian_mallet.usage": "Agachar + Clique Direito em um Depósito para prensar lingotes (Tenha cuidado, é frágil!).",
   "config.createeasiersheets.client": "Configurações do Cliente",
-  "config.createeasiersheets.enableSound": "Habilitar som do martelo",
-  "config.createeasiersheets.enableSound.tooltip": "Se o Martelo Robusto deve reproduzir um som quando usado em um Depósito.",
   "config.createeasiersheets.soundVolume": "Volume do som do martelo",
   "config.createeasiersheets.soundVolume.tooltip": "Volume do som emitido ao usar o Martelo Robusto em um Depósito.",
   "config.createeasiersheets.enableParticles": "Habilitar partículas do martelo",

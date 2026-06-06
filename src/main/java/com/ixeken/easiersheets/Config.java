@@ -10,17 +10,11 @@ public class Config {
     public static class Client {
         private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
 
-        public static final ModConfigSpec.BooleanValue ENABLE_SOUND;
         public static final ModConfigSpec.IntValue SOUND_VOLUME;
         public static final ModConfigSpec.BooleanValue ENABLE_PARTICLES;
 
         static {
             BUILDER.comment("Client-only settings").translation("config.createeasiersheets.client").push("client");
-
-            ENABLE_SOUND = BUILDER
-                    .comment("Enable or disable sound when using the Sturdy Hammer on a Depot.")
-                    .translation("config.createeasiersheets.enableSound")
-                    .define("enableSound", true);
 
             SOUND_VOLUME = BUILDER
                     .comment("Volume of the sound when using the Sturdy Hammer (percentage).")

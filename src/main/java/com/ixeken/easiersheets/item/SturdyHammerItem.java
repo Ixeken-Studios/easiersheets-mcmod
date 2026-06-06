@@ -97,8 +97,8 @@ public class SturdyHammerItem extends Item {
                                 }
 
                                 // Feedback audiovisual
-                                if (Config.Client.ENABLE_SOUND.get()) {
-                                    float volume = Config.Client.SOUND_VOLUME.get() / 100.0F;
+                                float volume = Config.Client.SOUND_VOLUME.get() / 100.0F;
+                                if (volume > 0.0F) {
                                     level.playSound(null, pos, SoundEvents.ANVIL_USE, SoundSource.BLOCKS, volume, 1.2F);
                                 }
                                 // Efecto visual de partículas de llama para mayor inmersión

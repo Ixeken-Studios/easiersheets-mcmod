@@ -1,5 +1,25 @@
 # Changelog
 
+## v1.2.1 - Configuration Refinement (2026-06-06)
+
+### ✨ Added:
+- **Config Folder Organization:** Config files are now organized inside a dedicated subfolder (`config/createeasiersheets/`) instead of the root of the config directory.
+
+### 🛠️ Changed / Removed:
+- **Redundant Option Removed:** Removed the `enableSound` config toggle since the volume slider can already be set to `0` to disable sounds.
+
+---
+
+## Español
+
+### ✨ Se agregó:
+- **Organización de Configuración en Carpeta:** Los archivos de configuración ahora se guardan ordenados dentro de una subcarpeta dedicada (`config/createeasiersheets/`) en lugar de estar sueltos en el directorio.
+
+### 🛠️ Se cambió / eliminó:
+- **Opción Redundante Eliminada:** Se eliminó la opción para activar/desactivar el sonido en la configuración, ya que se puede poner el volumen en `0` para silenciarlo.
+
+---
+
 ## v1.2.0 - Configuration Update & Obsidian Mallet (2026-06-06)
 
 ### ✨ Added:

@@ -30,8 +30,8 @@ public class CreateEasierSheets {
         NeoForge.EVENT_BUS.register(this);
 
         // Configuración
-        modContainer.registerConfig(ModConfig.Type.CLIENT, Config.Client.SPEC);
-        modContainer.registerConfig(ModConfig.Type.SERVER, Config.Server.SPEC);
+        modContainer.registerConfig(ModConfig.Type.CLIENT, Config.Client.SPEC, "createeasiersheets/client.toml");
+        modContainer.registerConfig(ModConfig.Type.SERVER, Config.Server.SPEC, "createeasiersheets/server.toml");
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
