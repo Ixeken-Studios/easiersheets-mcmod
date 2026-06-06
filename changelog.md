@@ -1,5 +1,30 @@
 # Changelog
 
+## v1.2.0 - Configuration Update & Obsidian Mallet (2026-06-06)
+
+### ✨ Added:
+- **Obsidian Mallet:** A cheaper, brittle alternative to the Sturdy Hammer. Crafted with 3 Sticks and 2 Obsidian.
+- **Configurable Settings:**
+  - Separated client and server configurations.
+  - Added options to change the durability of both the Sturdy Hammer and the Obsidian Mallet.
+  - Added a configurable chance (default 10%) for the Obsidian Mallet to shatter instantly upon use.
+  - Added client options to configure hammer sound volume (percentage), sound toggles, and particle toggles.
+  
+---
+
+## Español
+
+### ✨ Se agregó:
+- **Mazo de Obsidiana:** Una alternativa económica y frágil al Martillo Robusto. Se fabrica con 3 palos y 2 de obsidiana.
+- **Configuraciones Personalizables:**
+  - Configuración dividida entre cliente y servidor.
+  - Opciones para ajustar la durabilidad máxima del Martillo Robusto y del Mazo de Obsidiana.
+  - Probabilidad configurable (por defecto 10%) de que el Mazo de Obsidiana se rompa instantáneamente al usarse.
+  - Ajuste de volumen (0-100%), activación de sonido y partículas para el cliente.
+
+---
+
+
 ## v1.1.0 - JEI Integration and Localization (2026-04-09)
 
 ### ✨ Added:

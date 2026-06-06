@@ -17,6 +17,12 @@ public class ModItems {
                     .durability(1024)
             ));
 
+    // Mazo improvisado de obsidiana con baja durabilidad (16 usos)
+    public static final DeferredItem<Item> OBSIDIAN_MALLET = ITEMS.register("obsidian_mallet",
+            () -> new SturdyHammerItem(new Item.Properties()
+                    .durability(16)
+            ));
+
     // Este metodo lo llamaremos desde tu clase principal
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

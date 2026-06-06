@@ -9,7 +9,7 @@ A lightweight NeoForge addon for the **Create** mod.
 For the full mod description and features, see [description.md](description.md).
 
 ## 📖 Overview
-Introduces the **Sturdy Hammer**, a tool that lets you manually press any valid ingot into a sheet on a Depot without needing kinetic energy.
+Introduces the **Sturdy Hammer** and the **Obsidian Mallet**, tools that let you manually press any valid ingot into a sheet on a Depot without needing kinetic energy.
 
 ## 🚀 How to Run the Project
 

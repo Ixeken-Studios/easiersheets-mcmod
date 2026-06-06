@@ -26,7 +26,7 @@ public class ModCreativeTabs {
                     // Los ítems que aparecerán dentro de la pestaña
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.STURDY_HAMMER.get());
-                        // Si creamos más ítems en el futuro, los agregaremos aquí
+                        output.accept(ModItems.OBSIDIAN_MALLET.get());
                     })
                     .build());
 

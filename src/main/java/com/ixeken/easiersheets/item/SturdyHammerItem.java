@@ -1,5 +1,6 @@
 package com.ixeken.easiersheets.item;
 
+import com.ixeken.easiersheets.Config;
 import com.simibubi.create.AllBlocks;
 import com.simibubi.create.AllRecipeTypes;
 import com.simibubi.create.content.kinetics.press.PressingRecipe;
@@ -33,8 +34,10 @@ public class SturdyHammerItem extends Item {
     // --- NUEVO: Añadimos el Tooltip al ítem ---
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-        // Añadimos una línea de texto gris traducible
-        tooltipComponents.add(Component.translatable("tooltip.createeasiersheets.sturdy_hammer.usage")
+        String key = stack.is(ModItems.OBSIDIAN_MALLET.get()) 
+                ? "tooltip.createeasiersheets.obsidian_mallet.usage" 
+                : "tooltip.createeasiersheets.sturdy_hammer.usage";
+        tooltipComponents.add(Component.translatable(key)
                 .withStyle(ChatFormatting.GRAY));
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
@@ -82,17 +85,28 @@ public class SturdyHammerItem extends Item {
                                 level.sendBlockUpdated(pos, level.getBlockState(pos), level.getBlockState(pos), 3);
                                 // ---------------------
 
-                                // Desgastamos el martillo
+                                // Desgastamos el martillo (con probabilidad de ruptura instantánea para el mazo de obsidiana)
                                 if (context.getPlayer() != null) {
-                                    context.getItemInHand().hurtAndBreak(1, context.getPlayer(), EquipmentSlot.MAINHAND);
+                                    ItemStack hammer = context.getItemInHand();
+                                    if (hammer.is(ModItems.OBSIDIAN_MALLET.get()) && level.getRandom().nextFloat() < (Config.Server.OBSIDIAN_MALLET_BREAK_CHANCE.get() / 100.0F)) {
+                                        int remainingDurability = hammer.getMaxDamage() - hammer.getDamageValue();
+                                        hammer.hurtAndBreak(remainingDurability, context.getPlayer(), EquipmentSlot.MAINHAND);
+                                    } else {
+                                        hammer.hurtAndBreak(1, context.getPlayer(), EquipmentSlot.MAINHAND);
+                                    }
                                 }
 
                                 // Feedback audiovisual
-                                level.playSound(null, pos, SoundEvents.ANVIL_USE, SoundSource.BLOCKS, 0.8F, 1.2F);
+                                if (Config.Client.ENABLE_SOUND.get()) {
+                                    float volume = Config.Client.SOUND_VOLUME.get() / 100.0F;
+                                    level.playSound(null, pos, SoundEvents.ANVIL_USE, SoundSource.BLOCKS, volume, 1.2F);
+                                }
                                 // Efecto visual de partículas de llama para mayor inmersión
-                                ((ServerLevel) level).sendParticles(ParticleTypes.FLAME, 
-                                    pos.getX() + 0.5, pos.getY() + 1.1, pos.getZ() + 0.5, 
-                                    10, 0.2, 0.2, 0.2, 0.05);
+                                if (Config.Client.ENABLE_PARTICLES.get()) {
+                                    ((ServerLevel) level).sendParticles(ParticleTypes.FLAME, 
+                                        pos.getX() + 0.5, pos.getY() + 1.1, pos.getZ() + 0.5, 
+                                        10, 0.2, 0.2, 0.2, 0.05);
+                                }
                             }
                             return InteractionResult.sidedSuccess(level.isClientSide());
                         }
@@ -101,5 +115,16 @@ public class SturdyHammerItem extends Item {
             }
         }
         return super.useOn(context);
+    }
+
+    @Override
+    public int getMaxDamage(ItemStack stack) {
+        if (stack.is(ModItems.STURDY_HAMMER.get())) {
+            return Config.Server.HAMMER_DURABILITY.get();
+        }
+        if (stack.is(ModItems.OBSIDIAN_MALLET.get())) {
+            return Config.Server.MALLET_DURABILITY.get();
+        }
+        return super.getMaxDamage(stack);
     }
 }

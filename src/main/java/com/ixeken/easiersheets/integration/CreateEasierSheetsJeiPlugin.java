@@ -71,6 +71,7 @@ public class CreateEasierSheetsJeiPlugin implements IModPlugin {
     @Override
     public void registerRecipeCatalysts(IRecipeCatalystRegistration registration) {
         registration.addRecipeCatalyst(ModItems.STURDY_HAMMER.get().getDefaultInstance(), HAMMERING_TYPE);
+        registration.addRecipeCatalyst(ModItems.OBSIDIAN_MALLET.get().getDefaultInstance(), HAMMERING_TYPE);
     }
 
     private static class HammeringCategory implements IRecipeCategory<PressingRecipe> {

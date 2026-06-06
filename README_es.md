@@ -7,7 +7,7 @@ Para ver la descripción completa del mod y sus características, consulta [desc
 [**Descargar en Modrinth**](https://modrinth.com/mod/create-easier-sheets)
 
 ## 📖 Descripción General
-Introduce el **Sturdy Hammer** (Martillo Robusto), una herramienta que te permite prensar manualmente cualquier lingote válido para convertirlo en una placa (sheet) sobre un Depot sin necesidad de energía cinética.
+Introduce el **Sturdy Hammer** (Martillo Robusto) y el **Obsidian Mallet** (Mazo de Obsidiana), herramientas que te permiten prensar manualmente cualquier lingote válido para convertirlo en una placa (sheet) sobre un Depot sin necesidad de energía cinética.
 
 ## 🚀 Cómo ejecutar el proyecto
 
